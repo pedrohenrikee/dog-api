@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    <title>Galeria de Cachorros</title>
+</head>
+<body>
+    <main>
+        <h1>Galeria de Cachorros</h1>
+        <p class="subtitulo">Escolha uma raça (os nomes são em inglês, como hound, labrador ou pug) e veja 10 fotos.</p>
+
+        <div class="busca">
+            <input type="text" id="racaInput" list="listaRacas" placeholder="Digite uma raça (ex: labrador)" autocomplete="off">
+            <datalist id="listaRacas"></datalist>
+            <button id="buscarBtn" type="button">Buscar</button>
+        </div>
+
+        <p id="mensagem" class="mensagem" aria-live="polite"></p>
+
+        <section id="galeria-container" class="galeria"></section>
+    </main>
+</body>
+</html>
